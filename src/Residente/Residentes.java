@@ -63,5 +63,4 @@ public class Residentes {
         this.telefono = telefono;
     }
     
-    
 }
