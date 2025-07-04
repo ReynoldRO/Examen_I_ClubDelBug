@@ -11,4 +11,8 @@ public interface Lista {
     public Lista add(Lista t);
     public Lista remove(Lista t);
     public Lista find(Lista t);
+
+    @Override
+    public String toString();
+    
 }

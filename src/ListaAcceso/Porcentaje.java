@@ -9,5 +9,5 @@ package ListaAcceso;
  * @author Student
  */
 public class Porcentaje {
-    
+    private Porcentaje( "Entrada", "Salidas");
 }
