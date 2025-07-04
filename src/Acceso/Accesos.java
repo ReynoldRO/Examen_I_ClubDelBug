@@ -1,5 +1,5 @@
 package Acceso;
-
+import ListaAcceso.Lista; 
 /**
  *
  * @author Student
@@ -7,17 +7,19 @@ package Acceso;
 public class Accesos {
    private String codigo;
     private String residente;
-    private String accesso;
+    private Lista accesso;
     private String fecha_y_hora;
     private String autorizacion;
 
-    public Accesos(String codigo, String residente, String accesso, String fecha_y_hora, String autorizacion) {
+    public Accesos(String codigo, String residente, Lista accesso, String fecha_y_hora, String autorizacion) {
         this.codigo = codigo;
         this.residente = residente;
         this.accesso = accesso;
         this.fecha_y_hora = fecha_y_hora;
         this.autorizacion = autorizacion;
     }
+
+   
 
     public String getCodigo() {
         return codigo;
@@ -27,7 +29,7 @@ public class Accesos {
         return residente;
     }
 
-    public String getAccesso() {
+    public Lista getAccesso() {
         return accesso;
     }
 
@@ -39,9 +41,11 @@ public class Accesos {
         return "Nombre del guardia que lo autorizó: " + autorizacion;
     }
 
-    public void setAccesso(String accesso) {
+    public void setAccesso(Lista accesso) {
         this.accesso = accesso;
     }
+
+    
 
     @Override
     public String toString() {
