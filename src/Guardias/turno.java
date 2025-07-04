@@ -10,8 +10,20 @@ package Guardias;
  */
 public enum turno {
    
-    dia,
-    tarde,
-    noche;
+    dia("dia"),
+    tarde("tarde"),
+    noche("noche");
+    
+    private String turno;
+
+    public void setTurno(String turno) {
+        this.turno = turno;
+    }
+
+    private turno(String turno) {
+        this.turno = turno;
+    }
+
+    
     
 }
